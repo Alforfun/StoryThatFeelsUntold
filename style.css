@@ -173,8 +173,8 @@ footer {
 }
 
 .contact-icons img {
-  width: 24px;
-  height: 24px;
+  width: 5px;
+  height: 5px;
   filter: brightness(0.9);
   transition: 0.2s ease;
 }
