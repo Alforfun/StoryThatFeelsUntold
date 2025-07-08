@@ -151,3 +151,43 @@ footer {
   color: #aaa;
   border-top: 1px solid #222;
 }
+
+.contact {
+  padding: 60px 40px;
+  text-align: center;
+  background-color: #0d0d0d;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.contact-icons img {
+  width: 40px;
+  height: 40px;
+  filter: brightness(0.8);
+  transition: 0.3s;
+}
+
+.contact-icons img:hover {
+  filter: brightness(1.2);
+  transform: scale(1.1);
+}
+
+.contact a {
+  color: #00ffcc;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
