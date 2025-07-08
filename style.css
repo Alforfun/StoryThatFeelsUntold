@@ -153,29 +153,30 @@ footer {
 }
 
 .contact {
-  padding: 60px 40px;
-  text-align: center;
+  padding: 50px 20px;
   background-color: #0d0d0d;
+  text-align: center;
 }
 
 .contact h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
   letter-spacing: 1px;
+  color: #f0f0f0;
 }
 
 .contact-icons {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  margin-bottom: 20px;
+  gap: 25px;
+  margin-bottom: 10px;
 }
 
 .contact-icons img {
-  width: 40px;
-  height: 40px;
-  filter: brightness(0.8);
-  transition: 0.3s;
+  width: 24px;
+  height: 24px;
+  filter: brightness(0.9);
+  transition: 0.2s ease;
 }
 
 .contact-icons img:hover {
@@ -183,11 +184,12 @@ footer {
   transform: scale(1.1);
 }
 
-.contact a {
+.contact-links a {
   color: #00ffcc;
   text-decoration: none;
+  font-size: 0.95rem;
 }
 
-.contact a:hover {
+.contact-links a:hover {
   text-decoration: underline;
 }
