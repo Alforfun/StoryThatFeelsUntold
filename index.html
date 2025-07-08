@@ -2,63 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Story That Feels Untold</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="fade-in">
-    <img src="images/STFU LOGO REVISI WHITE.png" alt="STFU Logo" class="logo"/>
-    <h1>Story That Feels Untold</h1>
-    <p class="tagline">Dari semesta yang jauh, hadir membawa emosi dalam bentuk suara. Menyuarakan kisah-kisah yang belum pernah terungkap.</p>
-    <img src="images/profile.jpg" alt="Band Photo" class="profile-img"/>
+  <header>
+    <img src="img/logo.png" alt="STFU Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#music">Music</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  <main>
-    <section class="about fade-in">
-      <h2>About</h2>
-      <p>Story That Feels Untold (STFU) adalah band indie asal Indonesia yang berdiri tahun 2023. Musik kami terinspirasi dari kehidupan sehari-hari dan kisah yang belum pernah terungkap.</p>
-    </section>
 
-    <section class="music fade-in">
-      <h2>Music</h2>
-      <section id="presave" style="text-align: center; padding: 40px;">
-    <h2 style="font-size: 28px; color: #fff;">🎧 Pre-Save Fall Now!</h2>
-    <p style="color: #bbb;">Story That Feels Untold Debut Single</p>
-    <a href="https://ffm.to/storythatfeelsuntoldfall" target="_blank" style="display: inline-block; padding: 14px 24px; background: linear-gradient(135deg, #550000, #aa0000); color: white; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 10px;">
-      🔗 Pre-Save via Feature.fm
-<div style="margin-top: 20px;">
-  <p style="color: #bbb;">Available on:</p>
-  <img src="images/Spotify 1.png" width="32" alt="Spotify" style="margin-right:10px;">
-  <img src="images/Apple 2.png" width="32" alt="Apple Music" style="margin-right:10px;">
-  <img src="images/Tidal 3.png" width="32" alt="Tidal">
-</div>
+  <section class="hero">
+    <img src="img/cover-fall.jpg" alt="Cover Fall" class="cover" />
+    <a href="https://ffm.to/storythatfeelsuntoldfall" target="_blank" class="btn">🎧 Pre-save Now</a>
   </section>
 
-    <section class="gallery fade-in">
-      <h2>Gallery</h2>
-      <div class="gallery-images">
-        <img src="images/WhatsApp Image 2025-06-29 at 14.46.41.jpeg" alt="PP STFU NEW two.png"/>
-        <img src="images/gallery2.jpg" alt="Gallery 2"/>
-      </div>
-    </section>
+  <section class="about" id="about">
+    <h2>About</h2>
+    <p class="slogan">"Dari semesta yang jauh, hadir membawa emosi dalam bentuk suara. Menyuarakan kisah-kisah yang belum pernah terungkap."</p>
+    <p>Story That Feels Untold (STFU) adalah band Alternative Metal asal Indonesia yang berdiri tahun 2023. Musik kami terinspirasi dari kehidupan sehari-hari dan mencoba mengekspresikan perasaan yang diungkapkan dalam lagu.</p>
+    <img src="img/foto-band.jpg" alt="Band" class="foto-band" />
+  </section>
 
-    <section class="contact fade-in">
-      <h2>Contact</h2>
-      <form action="https://formspree.io/f/yourformid" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </main>
-  <footer class="fade-in">
-    <p>&copy; 2025 Story That Feels Untold. All rights reserved.</p>
-    <div class="social">
-      <a href="https://www.instagram.com/storythatfeelsuntoldband/" target="_blank">Instagram</a>
-      <a href="mailto:storythatfeelsuntoldband@gmail.com">Email</a>
+  <section class="gallery" id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="img/gallery1.jpg" alt="Gallery 1" />
+      <img src="img/gallery2.jpg" alt="Gallery 2" />
+      <img src="img/gallery3.jpg" alt="Gallery 3" />
+      <img src="img/gallery4.jpg" alt="Gallery 4" />
     </div>
+  </section>
+
+  <section class="music" id="music">
+    <h2>Listen on</h2>
+    <div class="streaming-links">
+      <a href="https://open.spotify.com" target="_blank"><img src="icons/Logo Spotify.png" alt="Spotify" /></a>
+      <a href="https://tidal.com" target="_blank"><img src="icons/Logo Tidal.png" alt="Tidal" /></a>
+      <a href="https://https://music.apple.com/" target="_blank"><img src="icons/Logo Apple Music.png" alt="Tidal" /></a>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 Story That Feels Untold. All rights reserved.</p>
   </footer>
 </body>
 </html>
