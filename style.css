@@ -1,16 +1,7 @@
-/* Reset dasar */
-* {
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Georgia', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Georgia', serif;
   background-color: #0b0b0b;
   background-image: url('img/ice-age.png');
   background-repeat: repeat;
@@ -28,7 +19,6 @@ body::before {
   z-index: -1;
 }
 
-/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -46,6 +36,8 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 25px;
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
@@ -55,14 +47,11 @@ nav a {
   letter-spacing: 1px;
 }
 
-nav a:hover,
-nav a:focus {
+nav a:hover {
   color: #00ffcc;
   transition: 0.3s;
-  outline: none;
 }
 
-/* Hero Section */
 .hero {
   text-align: center;
   padding: 40px 20px;
@@ -85,27 +74,18 @@ nav a:focus {
   font-weight: bold;
   letter-spacing: 1px;
   text-decoration: none;
-  display: inline-block;
 }
 
-.btn:hover,
-.btn:focus {
+.btn:hover {
   background-color: #00cfa8;
-  outline: none;
 }
 
-/* Sections */
-.about,
-.gallery,
-.music {
+.about, .gallery, .music {
   padding: 60px 40px;
   text-align: center;
 }
 
-.about h2,
-.gallery h2,
-.music h2,
-.contact h2 {
+.about h2, .gallery h2, .music h2 {
   font-size: 2.2rem;
   margin-bottom: 20px;
   letter-spacing: 2px;
@@ -122,10 +102,9 @@ nav a:focus {
   width: 100%;
   margin-top: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
 }
 
-/* Gallery */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -138,14 +117,13 @@ nav a:focus {
   height: auto;
   border-radius: 8px;
   filter: grayscale(100%);
-  transition: filter 0.3s ease;
+  transition: filter 0.3s;
 }
 
 .gallery-grid img:hover {
   filter: grayscale(0%);
 }
 
-/* Music Platforms */
 .streaming-links {
   display: flex;
   justify-content: center;
@@ -165,11 +143,26 @@ nav a:focus {
   filter: brightness(1.2);
 }
 
-/* Contact Section */
+footer {
+  background-color: #0a0a0a;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+  border-top: 1px solid #222;
+}
+
 .contact {
   padding: 50px 20px;
   background-color: #0d0d0d;
   text-align: center;
+}
+
+.contact h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  color: #f0f0f0;
 }
 
 .contact-icons {
@@ -197,13 +190,10 @@ nav a:focus {
   font-size: 0.95rem;
 }
 
-.contact-links a:hover,
-.contact-links a:focus {
+.contact-links a:hover {
   text-decoration: underline;
-  outline: none;
 }
 
-/* Floating Presave Button */
 .presave-btn {
   position: fixed;
   bottom: 20px;
@@ -219,36 +209,18 @@ nav a:focus {
   display: flex;
   align-items: center;
   gap: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   text-decoration: none;
   transition: transform 0.2s ease;
 }
 
-.presave-btn:hover,
-.presave-btn:focus {
+.presave-btn:hover {
   transform: scale(1.05);
-  outline: none;
 }
 
 .presave-btn img {
   width: 20px;
   height: 20px;
-}
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-  .logo {
-    height: 50px;
-  }
-
-  nav ul {
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-
-  .cover {
-    max-width: 100%;
-  }
 }
 
 @media (max-width: 480px) {
@@ -263,4 +235,15 @@ nav a:focus {
     width: 16px;
     height: 16px;
   }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
