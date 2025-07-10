@@ -1,7 +1,16 @@
-body {
+/* Reset dasar */
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Georgia', serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Georgia', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #0b0b0b;
   background-image: url('img/ice-age.png');
   background-repeat: repeat;
@@ -15,10 +24,11 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* Efek kabut gelap */
+  background: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
 
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -36,8 +46,6 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 25px;
-  margin: 0;
-  padding: 0;
 }
 
 nav a {
@@ -47,11 +55,14 @@ nav a {
   letter-spacing: 1px;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
   color: #00ffcc;
   transition: 0.3s;
+  outline: none;
 }
 
+/* Hero Section */
 .hero {
   text-align: center;
   padding: 40px 20px;
@@ -74,18 +85,27 @@ nav a:hover {
   font-weight: bold;
   letter-spacing: 1px;
   text-decoration: none;
+  display: inline-block;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   background-color: #00cfa8;
+  outline: none;
 }
 
-.about, .gallery, .music {
+/* Sections */
+.about,
+.gallery,
+.music {
   padding: 60px 40px;
   text-align: center;
 }
 
-.about h2, .gallery h2, .music h2 {
+.about h2,
+.gallery h2,
+.music h2,
+.contact h2 {
   font-size: 2.2rem;
   margin-bottom: 20px;
   letter-spacing: 2px;
@@ -102,9 +122,10 @@ nav a:hover {
   width: 100%;
   margin-top: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
+/* Gallery */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -117,13 +138,14 @@ nav a:hover {
   height: auto;
   border-radius: 8px;
   filter: grayscale(100%);
-  transition: filter 0.3s;
+  transition: filter 0.3s ease;
 }
 
 .gallery-grid img:hover {
   filter: grayscale(0%);
 }
 
+/* Music Platforms */
 .streaming-links {
   display: flex;
   justify-content: center;
@@ -143,26 +165,11 @@ nav a:hover {
   filter: brightness(1.2);
 }
 
-footer {
-  background-color: #0a0a0a;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-  color: #aaa;
-  border-top: 1px solid #222;
-}
-
+/* Contact Section */
 .contact {
   padding: 50px 20px;
   background-color: #0d0d0d;
   text-align: center;
-}
-
-.contact h2 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-  letter-spacing: 1px;
-  color: #f0f0f0;
 }
 
 .contact-icons {
@@ -190,10 +197,13 @@ footer {
   font-size: 0.95rem;
 }
 
-.contact-links a:hover {
+.contact-links a:hover,
+.contact-links a:focus {
   text-decoration: underline;
+  outline: none;
 }
 
+/* Floating Presave Button */
 .presave-btn {
   position: fixed;
   bottom: 20px;
@@ -209,18 +219,36 @@ footer {
   display: flex;
   align-items: center;
   gap: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   text-decoration: none;
   transition: transform 0.2s ease;
 }
 
-.presave-btn:hover {
+.presave-btn:hover,
+.presave-btn:focus {
   transform: scale(1.05);
+  outline: none;
 }
 
 .presave-btn img {
   width: 20px;
   height: 20px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .logo {
+    height: 50px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .cover {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
