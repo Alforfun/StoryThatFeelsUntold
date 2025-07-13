@@ -230,11 +230,14 @@ body::before {
 .hero-desc {
   margin-top: 20px;
   font-size: 1rem;
-  color: #e0e0e0;
+  font-weight: 600;
+  color: #c7c7c7;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.6;
   padding: 0 20px;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
