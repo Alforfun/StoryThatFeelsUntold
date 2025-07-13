@@ -19,11 +19,18 @@
     </nav>
   </header>
 
+  <!-- BANNER -->
+  <section class="top-banner">
+    <img src="img/banner.jpg" alt="STFU Banner" class="banner-image" />
+  </section>
+
+  <!-- COVER + PRE-SAVE -->
   <section class="hero fade-in">
     <img src="img/COVER SAMPUL SINGLE.jpg" alt="Cover Fall" class="cover" />
     <a href="https://ffm.to/storythatfeelsuntoldfall" target="_blank" class="btn">🎧 Pre-save Now</a>
   </section>
 
+  <!-- ABOUT -->
   <section class="about fade-in" id="about">
     <h2>About</h2>
     <p class="slogan">"Dari semesta yang jauh, hadir membawa emosi dalam bentuk suara. Menyuarakan kisah-kisah yang belum pernah terungkap."</p>
@@ -31,6 +38,7 @@
     <img src="img/FOTO BAND UTAMA.jpeg" alt="Band" class="foto-band" />
   </section>
 
+  <!-- GALLERY -->
   <section class="gallery fade-in" id="gallery">
     <h2>Gallery</h2>
     <div class="gallery-grid">
@@ -41,6 +49,7 @@
     </div>
   </section>
 
+  <!-- MUSIC -->
   <section class="music fade-in" id="music">
     <h2>Listen on</h2>
     <div class="streaming-links">
@@ -51,6 +60,7 @@
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section class="contact fade-in" id="contact">
     <h2>Contact</h2>
     <div class="contact-icons">
@@ -71,6 +81,7 @@
     </div>
   </section>
 
+  <!-- FLOATING PRE-SAVE -->
   <a href="https://ffm.to/storythatfeelsuntoldfall" class="presave-btn" target="_blank">
     <img src="icons/Logo Spotify.png" alt="Spotify Icon">
     Pre-save
@@ -84,9 +95,7 @@
           entry.target.classList.add('visible');
         }
       });
-    }, {
-      threshold: 0.1
-    });
+    }, { threshold: 0.1 });
 
     fadeEls.forEach(el => observer.observe(el));
   </script>
