@@ -8,17 +8,8 @@
 </head>
 <body>
 
-  <!-- Banner -->
-  <div class="banner">
-    <picture>
-      <source srcset="img/banner square.jpg" media="(max-width: 600px)" />
-      <img src="img/banner.jpg" alt="Banner" />
-    </picture>
-  </div>
-
-  <!-- Header / Navbar -->
   <header>
-    <img src="img/LOGO BAND OFFICIAL.png" alt="STFU Logo" class="logo" />
+    <img src="img/banner.jpg" alt="Banner STFU" class="banner" />
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
@@ -29,15 +20,11 @@
     </nav>
   </header>
 
-  <!-- Hero Cover -->
   <section class="hero fade-in">
     <img src="img/COVER SAMPUL SINGLE.jpg" alt="Cover Fall" class="cover" />
-    <div class="btn-group">
-      <a href="https://ffm.to/storythatfeelsuntoldfall" target="_blank" class="btn">🎧 Pre-save Now</a>
-    </div>
+    <a href="https://ffm.to/storythatfeelsuntoldfall" target="_blank" class="btn">🎧 Pre-save Now</a>
   </section>
 
-  <!-- About -->
   <section class="about fade-in" id="about">
     <h2>About</h2>
     <p class="slogan">"Dari semesta yang jauh, hadir membawa emosi dalam bentuk suara. Menyuarakan kisah-kisah yang belum pernah terungkap."</p>
@@ -45,19 +32,18 @@
     <img src="img/FOTO BAND UTAMA.jpeg" alt="Band" class="foto-band" />
   </section>
 
-  <!-- Gallery -->
   <section class="gallery fade-in" id="gallery">
     <h2>Gallery</h2>
     <div class="gallery-grid">
-      <img src="img/Gallery 1.jpg" alt="Gallery 1" />
-      <img src="img/Gallery 2.jpg" alt="Gallery 2" />
-      <img src="img/Gallery 3.jpg" alt="Gallery 3" />
-      <img src="img/Gallery 4.jpg" alt="Gallery 4" />
-      <img src="img/Gallery 5.jpg" alt="Gallery 5" />
+      <img src="img/Gallery 1.jpg" alt="Gallery 1" class="fade-in" />
+      <img src="img/Gallery 2.jpg" alt="Gallery 2" class="fade-in" />
+      <img src="img/Gallery 3.jpg" alt="Gallery 3" class="fade-in" />
+      <img src="img/Gallery 4.jpg" alt="Gallery 4" class="fade-in" />
+      <img src="img/Gallery 5.jpg" alt="Gallery 5" class="fade-in" />
+      <img src="img/Gallery 6.jpg" alt="Gallery 6" class="fade-in" />
     </div>
   </section>
 
-  <!-- Music Links -->
   <section class="music fade-in" id="music">
     <h2>Listen on</h2>
     <div class="streaming-links">
@@ -68,13 +54,18 @@
     </div>
   </section>
 
-  <!-- Contact -->
   <section class="contact fade-in" id="contact">
     <h2>Contact</h2>
     <div class="contact-icons">
-      <a href="mailto:storythatfeelsuntoldband@gmail.com" title="Email"><img src="icons/email.png" alt="Email Icon" /></a>
-      <a href="https://www.instagram.com/storythatfeelsuntoldband/" target="_blank" title="Instagram"><img src="icons/instagram.png" alt="Instagram Icon" /></a>
-      <a href="https://www.youtube.com/channel/UC65J1EVc9RFP8gw6TrpioqA" target="_blank" title="YouTube"><img src="icons/youtube.png" alt="YouTube Icon" /></a>
+      <a href="mailto:storythatfeelsuntoldband@gmail.com" title="Email">
+        <img src="icons/email.png" alt="Email Icon" />
+      </a>
+      <a href="https://www.instagram.com/storythatfeelsuntoldband/" target="_blank" title="Instagram">
+        <img src="icons/instagram.png" alt="Instagram Icon" />
+      </a>
+      <a href="https://www.youtube.com/channel/UC65J1EVc9RFP8gw6TrpioqA" target="_blank" title="Youtube">
+        <img src="icons/youtube.png" alt="Youtube Icon" />
+      </a>
     </div>
     <div class="contact-links">
       <p><a href="mailto:storythatfeelsuntoldband@gmail.com">storythatfeelsuntoldband@gmail.com</a></p>
@@ -83,7 +74,6 @@
     </div>
   </section>
 
-  <!-- Floating Presave Button -->
   <a href="https://ffm.to/storythatfeelsuntoldfall" class="presave-btn" target="_blank">
     <img src="icons/Logo Spotify.png" alt="Spotify Icon">
     Pre-save
@@ -98,7 +88,9 @@
         }
       });
     }, { threshold: 0.1 });
+
     fadeEls.forEach(el => observer.observe(el));
   </script>
+
 </body>
 </html>
