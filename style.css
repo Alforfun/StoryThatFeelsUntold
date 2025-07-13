@@ -55,14 +55,11 @@ nav a:hover {
 /* BANNER */
 .top-banner {
   width: 100%;
-  max-height: 500px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #000;
-  margin: 0;
-  padding: 0;
   border-bottom: 2px solid #00ffcc;
   box-shadow: 0 0 20px rgba(0,255,204,0.15);
 }
@@ -71,11 +68,18 @@ nav a:hover {
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 0;
-  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+  object-position: center;
+  transition: all 0.4s ease;
+  max-height: 500px;
 }
 
-/* HERO COVER */
+/* MOBILE OPTIMIZATION FOR BANNER */
+@media (max-width: 768px) {
+  .banner-image {
+    clip-path: inset(0 15% 0 15%);
+  }
+}
+
 .hero {
   text-align: center;
   padding: 40px 20px;
