@@ -215,3 +215,14 @@ section {
     height: 16px;
   }
 }
+
+/* Efek gelap & blur di background */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.3); /* warna gelap transparan */
+  backdrop-filter: blur(4px);     /* efek blur */
+  -webkit-backdrop-filter: blur(4px); /* dukungan Safari */
+}
