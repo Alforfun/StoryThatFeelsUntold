@@ -52,6 +52,30 @@ nav a:hover {
   transition: 0.3s;
 }
 
+/* BANNER */
+.top-banner {
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px solid #00ffcc;
+  box-shadow: 0 0 20px rgba(0,255,204,0.15);
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+}
+
+/* HERO COVER */
 .hero {
   text-align: center;
   padding: 40px 20px;
@@ -143,15 +167,6 @@ nav a:hover {
 
 .streaming-links img:hover {
   filter: brightness(1.2);
-}
-
-footer {
-  background-color: #0a0a0a;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-  color: #aaa;
-  border-top: 1px solid #222;
 }
 
 .contact {
