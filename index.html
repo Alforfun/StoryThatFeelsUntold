@@ -9,9 +9,12 @@
 <body>
   <div class="container">
 
-    <!-- Banner -->
+    <!-- Banner Responsive -->
     <section class="top-banner">
-      <img src="img/banner.jpg" alt="STFU Banner" class="banner-img" />
+      <picture>
+        <source srcset="img/banner square.jpg" media="(max-width: 768px)">
+        <img src="img/banner.jpg" alt="STFU Banner" class="banner-img" />
+      </picture>
     </section>
 
     <!-- Header -->
@@ -86,7 +89,7 @@
     Pre-save
   </a>
 
-  <!-- Script Animasi -->
+  <!-- Script animasi scroll -->
   <script>
     const fadeEls = document.querySelectorAll('.fade-in');
     const observer = new IntersectionObserver((entries) => {
