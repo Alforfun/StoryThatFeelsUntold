@@ -226,3 +226,15 @@ body::before {
   backdrop-filter: blur(4px);     /* efek blur */
   -webkit-backdrop-filter: blur(4px); /* dukungan Safari */
 }
+
+.hero-desc {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #e0e0e0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  padding: 0 20px;
+  text-align: center;
+}
