@@ -17,6 +17,7 @@ const closeBtn = document.querySelector('.lightbox .close');
 
 galleryImages.forEach(img => {
   img.addEventListener('click', () => {
+    document.body.style.overflow = 'hidden'; // disable scroll
     lightbox.style.display = 'flex';
     lightboxImg.src = img.src;
     lightboxImg.classList.add('visible');
@@ -26,6 +27,7 @@ galleryImages.forEach(img => {
 const closeLightbox = () => {
   lightbox.style.display = 'none';
   lightboxImg.classList.remove('visible');
+  document.body.style.overflow = ''; // enable scroll again
 };
 
 closeBtn.addEventListener('click', closeLightbox);
