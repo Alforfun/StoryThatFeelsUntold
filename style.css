@@ -53,6 +53,11 @@ nav a:hover {
   color: #00ffcc;
 }
 
+/* Tambahan: link aktif */
+nav a.active {
+  border-bottom: 2px solid #00ffcc;
+}
+
 section {
   max-width: 960px;
   margin: 0 auto;
@@ -287,4 +292,9 @@ body::before {
 .lightbox .close:hover {
   color: #00ffcc;
   transform: scale(1.1);
+}
+
+/* Tambahan: smooth scroll */
+html {
+  scroll-behavior: smooth;
 }
