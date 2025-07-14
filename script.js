@@ -17,7 +17,7 @@ const closeBtn = document.querySelector('.lightbox .close');
 
 galleryImages.forEach(img => {
   img.addEventListener('click', () => {
-    document.body.style.overflow = 'hidden'; // disable scroll
+    document.body.style.overflow = 'hidden';
     lightbox.style.display = 'flex';
     lightboxImg.src = img.src;
     lightboxImg.classList.add('visible');
@@ -27,12 +27,19 @@ galleryImages.forEach(img => {
 const closeLightbox = () => {
   lightbox.style.display = 'none';
   lightboxImg.classList.remove('visible');
-  document.body.style.overflow = ''; // enable scroll again
+  document.body.style.overflow = '';
 };
 
 closeBtn.addEventListener('click', closeLightbox);
 lightbox.addEventListener('click', (e) => {
   if (e.target !== lightboxImg && e.target !== closeBtn) {
+    closeLightbox();
+  }
+});
+
+// ⬇️ Tambahkan kode Escape key di sini
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && lightbox.style.display === 'flex') {
     closeLightbox();
   }
 });
